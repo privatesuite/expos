@@ -1,0 +1,38 @@
+<div class="squares">
+
+	<div class="large">
+
+		<div class="body">
+
+			<div class="titles">
+
+				<span class="title">Featured Expositions</span>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<% for (const expo of expos) { %>
+
+		<a href="#/expo/<%- expo.id %>" class="interactive">
+
+			<div class="body">
+
+				<div class="titles">
+
+					<span class="title"><%- expo.name %></span>
+					<span class="subtitle"><%- expo.creators.join(", ") %></span>
+
+				</div>
+
+				<span class="preview"><%- expo.preview %></span>
+
+			</div>
+
+		</a>
+
+	<% } %>
+	
+</div>

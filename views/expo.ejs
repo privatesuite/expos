@@ -1,0 +1,18 @@
+<%
+
+	const expo = expos.find(_ => _.id === _route().split("/")[2]);
+
+%>
+
+<div id="expo">
+
+	<span class="title"><%- expo.name %></span>
+	<span class="subtitle"><%- expo.creators.join(", ") %></span>
+
+	<div class="content">
+
+		<%- await render(`../expos/${expo.id}/index.ejs`) %>
+
+	</div>
+
+</div>
