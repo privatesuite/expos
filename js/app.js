@@ -79,10 +79,11 @@ async function load () {
 
 		const s = document.createElement("script");
 
-		s.src = script.src;
+		if (script.src) s.src = script.src;
 		s.innerHTML = script.innerHTML;
 
 		script.parentElement.appendChild(s);
+		if (script.getAttribute("data-blocking") === "true") await new Promise(_ => s.addEventListener("load", () => _()));
 		script.remove();
 
 	}

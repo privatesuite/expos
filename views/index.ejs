@@ -14,7 +14,7 @@
 
 	</div>
 
-	<% for (const expo of expos) { %>
+	<% for (const expo of expos.filter(_ => !_.private)) { %>
 
 		<a href="#/expo/<%- expo.id %>" class="interactive">
 

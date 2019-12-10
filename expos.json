@@ -2,6 +2,19 @@
 
 	{
 
+		"id": "tropics",
+
+		"private": true,
+		"name": "Tropics",
+		"creators": ["aurame"],
+		"preview": "Infinite beaches greet you alongside dancing palm trees.",
+
+		"interactive": true
+
+	},
+
+	{
+
 		"id": "gas_station",
 
 		"name": "Gas Station",
